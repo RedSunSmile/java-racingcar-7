@@ -24,8 +24,8 @@ public class Input {
 
   public void movementOfCarInput() {
     System.out.println("시도할 횟수는 몇 회인가요");
-    Scanner sc = new Scanner(System.in);
-//      Integer Insert = Console.readLine();
+//    Scanner sc = new Scanner(System.in);
+    Integer Insert = Console.readLine();
     int insert = Integer.parseInt(sc.nextLine());
     List<Integer> movementCount = new ArrayList<>();
 
