@@ -16,10 +16,16 @@ repositories {
     maven { url 'https://jitpack.io' }
 }
 
+
 dependencies {
     implementation 'com.github.woowacourse-projects:mission-utils:1.2.0'
 }
 
 test {
     useJUnitPlatform()
+    jvmArgs += '--enable-preview'
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs += '--enable-preview'
 }
